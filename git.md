@@ -1,7 +1,7 @@
 ### <a name="目录列表"></a> 目录列表
 * [fork代码，同步原作者更新](#fork代码，同步原作者更新)  
 * [合并冲突](#合并冲突)  
-* [Git fetch和git pull的区别](#Git fetch和git pull的区别)  
+* [Git fetch和git pull的区别](#fetch和pull的区别)  
 ### <a name="fork代码，同步原作者更新"></a> fork代码，同步原作者更新  
 #### 给fork加一个remote
 * 使用git remote -v 查看远程状态  
@@ -31,7 +31,7 @@
 __其中：冲突标记<<<<<<< （7个<）与=======之间的内容是自己的修改，=======与>>>>>>>之间的内容是别人的修改__  
 * 然后提交更改重新push即可  
 `$ git add . && git commit -m "合并冲突" && git push origin master`
-### <a name="Git fetch和git pull的区别"></a> Git fetch和git pull的区别
+### <a name="fetch和pull的区别"></a> Git fetch和git pull的区别
 * __git fetch：是从远程获取最新版本到本地，不会自动merge__          
 `$ git fetch origin master`  
 `$ git log -p master..origin/master`  
